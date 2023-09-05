@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(
+    140deg,
+    rgb(228, 230, 230) 30%,
+
+    rgb(245, 247, 245) 5%
+  );
+}
+
+main {
+  min-height: 80vh;
+}
+.rating span {
+  margin: 0.1rem;
+}
+.rating svg {
+  color: #f3e117;
+}
+.rating-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+.product-title {
+  height: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+a {
+  text-decoration: none;
+  color: rgba(48, 48, 48, 0.938);
+}
+
+/* In your CSS or SCSS file */
+.admin-dropdown {
+  width: 180px; /* Adjust this width as needed */
+}
+
+.admin-dropdown.dropdown-menu {
+  left: auto;
+  right: 0;
+  max-height: 60vh; /* Adjust this value as needed */
+  overflow-y: auto;
+}
+
+.card-hover-pop-up {
+  transition: transform 0.2s ease-out;
+  /* border-bottom: 22px solid; */
+}
+
+.card-hover-pop-up:hover {
+  transform: scale(1.05);
+  z-index: 1;
+  /* border-bottom: 20px solid #000; */
+}
+
+/* styles.css (or your preferred CSS file) */
+.login-container {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap-reverse; /* Reverse the order on smaller screens */
+  justify-content: center;
+  align-items: center;
+}
+
+.login-image {
+  background-image: url("./assets//6..gif");
+  background-size: cover;
+  height: 100%;
+}
+
+.login-form {
+  padding: 20px;
+}
+
+/* Checkout Steps------------------------------------------- */
+.checkout-steps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.step-boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.step-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border: 1px solid rgb(133, 128, 128);
+  background-color: white;
+  color: rgb(6, 107, 48);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 15px;
+}
+
+.step-box.active {
+  background-color: rgb(14, 136, 14);
+  color: white;
+}
+.arrow-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 5px; /* Add margin to create space between boxes and arrow */
+}
+
+.arrow-icon svg {
+  width: 20px;
+  height: auto;
+  fill: black;
+}
+/* Checkout steps end-------------------------------------- */
+
+/* Add this CSS in your style sheet (e.g., App.css) */
+.carousel-image {
+  max-height: 780px; /* Adjust the maximum height as needed */
+  width: 100%;
+  object-fit: fill; /* Ensures the image covers the entire container */
+  object-position: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+  border-bottom: 38px solid #17831c;
+}
+
+/* ProductCarousel.css */
+.absolute-text {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center both horizontally and vertically */
+}
